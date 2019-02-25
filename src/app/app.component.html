@@ -1,13 +1,40 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div>
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="snMain.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1>VIRTUAL</h1>
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+
+    <span>Texto a la derecha</span>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #snMain opened mode="side" position="start">
+      <app-menu></app-menu>
+    </mat-sidenav>
+    <!-- <mat-sidenav #snSecond opened mode="side" position="end">Sidenav right</mat-sidenav> -->
+    <mat-sidenav-content class="algo">
+      <!-- <button mat-button md-raised-button color="primary" (click)="snMain.toggle()">PRIMARY</button> -->
+      <button mat-button md-raised-button color="accent">ACCENT</button>
+      <!-- <button mat-button md-raised-button color="warn" (click)="snSecond.toggle()">WARN</button> -->
+      <h2 class="mat-h2">The quick brown fox jumps over the lazy dog.</h2>
+      <span class="mat-subheading-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veniam nam laudantium, quo eligendi iure sapiente
+        quaerat nihil sint temporibus ad saepe, aliquam nulla libero earum nemo quas neque velit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reiciendis, quia, facere itaque quasi mollitia
+        esse
+        eum ratione, blanditiis officia veritatis repellendus consequuntur vitae deleniti excepturi iure sapiente sed
+        unde!
+      </span>
+      <footer class="footer">
+        <mat-divider></mat-divider>
+        <div class="mat-caption">
+          © 2014-2019 Materialize, All rights reserved.
+          <span class="mat-caption"><strong>MIT License</strong></span>
+        </div>
+      </footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
-
-
-<br>
-<button mat-button md-raised-button color="primary">PRIMARY</button>
-<button mat-button md-raised-button color="accent">ACCENT</button>
-<button mat-button md-raised-button color="warn">WARN</button>
-<br>
