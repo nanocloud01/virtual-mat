@@ -1,13 +1,22 @@
 <div>
+  <header>
+    <div style="float:left">
+      <h2>LOGO</h2>
+    </div>
+    <div style="float:right; width:300px; height:60px; border:0px solid red; 
+    text-align:right; position: relative">
+      <span style="position: relative; top: 70%">jueves 04 mayo, 2017 - 03:37 p.m.</span>
+    </div>
+  </header>
   <mat-toolbar color="primary">
     <button mat-icon-button (click)="snMain.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1>VIRTUAL</h1>
+    <h1>ASFI Virtual</h1>
     <!-- This fills the remaining space of the current row -->
     <span class="example-fill-remaining-space"></span>
 
-    <span>Texto a la derecha</span>
+    <span>Ingresar</span>
   </mat-toolbar>
 
   <mat-sidenav-container>
@@ -16,25 +25,22 @@
     </mat-sidenav>
     <!-- <mat-sidenav #snSecond opened mode="side" position="end">Sidenav right</mat-sidenav> -->
     <mat-sidenav-content class="algo">
-      <!-- <button mat-button md-raised-button color="primary" (click)="snMain.toggle()">PRIMARY</button> -->
-      <button mat-button md-raised-button color="accent">ACCENT</button>
-      <!-- <button mat-button md-raised-button color="warn" (click)="snSecond.toggle()">WARN</button> -->
-      <h2 class="mat-h2">The quick brown fox jumps over the lazy dog.</h2>
-      <span class="mat-subheading-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veniam nam laudantium, quo eligendi iure sapiente
-        quaerat nihil sint temporibus ad saepe, aliquam nulla libero earum nemo quas neque velit.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reiciendis, quia, facere itaque quasi mollitia
-        esse
-        eum ratione, blanditiis officia veritatis repellendus consequuntur vitae deleniti excepturi iure sapiente sed
-        unde!
-      </span>
-      <footer class="footer">
-        <mat-divider></mat-divider>
-        <div class="mat-caption">
-          © 2014-2019 Materialize, All rights reserved.
-          <span class="mat-caption"><strong>MIT License</strong></span>
-        </div>
-      </footer>
+      <div class="contenido">
+        <!-- <app-login></app-login> -->
+        <app-registro-usuario></app-registro-usuario>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
+  <footer class="footer">
+    <mat-divider></mat-divider>
+    <!-- <div class="mat-caption">
+        © 2014-2019 Materialize, All rights reserved.
+        <span class="mat-caption"><strong>MIT License</strong></span>
+      </div> -->
+    <mat-toolbar color='primary'>
+      <span class='spacer'></span>
+      <h3>© Copyright Angular Apps 2019.</h3>
+      <span class='spacer'></span>
+    </mat-toolbar>
+  </footer>
 </div>

@@ -28,6 +28,7 @@
             ],
             "styles": [
               "node_modules/normalize.css/normalize.css",
+              "src/skeleton.css",
               "src/styles.scss"
             ],
             "scripts": [],
